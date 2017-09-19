@@ -12,7 +12,7 @@ public class Substraction {
         firstNum = getInput.nextDouble(); // scan for a double to get first number
         System.out.println("Enter second number: ");
         secondNum = getInput.nextDouble(); // scan for a double to get second number
-        answer = firstNum - secondNum; // add the two numbers together
+        answer = firstNum - secondNum; // subtract the two numbers
         System.out.println("The answer is " + answer + ".");
     }
 }

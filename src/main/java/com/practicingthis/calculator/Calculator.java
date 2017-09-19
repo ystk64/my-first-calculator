@@ -10,20 +10,30 @@ public class Calculator {
 
         Multiplication newMultiplicationObject = new Multiplication();
 
-        System.out.println("Press 1 for addition, 2 for substraction, 3 for multiplication");
-        double choice;
+        Division newDivisionObject = new Division();
+
+        System.out.println("Press 1 for addition, 2 for substraction, 3 for multiplication, 4 for division");
+        String choice1;
         Scanner getChoice = new Scanner(System.in);
-        choice = getChoice.nextDouble();
+        choice1 = getChoice.next();
 
-        if(choice==1) {
-            newAdditionObject.addTwoNumbers();
+        switch (choice1) {
+
+            case "1":
+                newAdditionObject.addTwoNumbers();
+                break;
+
+            case "2":
+                newSubstractionObject.substractTwoNumbers();
+                break;
+
+            case "3":
+                newMultiplicationObject.multiplyTwoNumbers();
+                break;
+
+            case "4":
+                newDivisionObject.divideTwoNumbers();
+                break;
         }
-        else  if (choice==2) {
-            newSubstractionObject.substractTwoNumbers();
-        }
-        else newMultiplicationObject.multiplyTwoNumbers();
-
-        System.out.println("Finished calculations!");
-
     }
 }
